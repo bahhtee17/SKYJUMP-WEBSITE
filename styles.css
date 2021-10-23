@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.header-section{
+position: absolute;
+width: 1800px;
+height: 650px;
+left: 90px;
+top: 60px;
+background: rgba(118, 255, 222, 0.38);
+border-radius: 50px;
+
+}
+
+.header-logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+}
+
+.header-login{
+font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+color: #82827D;
+position: absolute;
+width: 63px;
+height: 36px;
+left: 1600px;
+top: 40px;
+
+}
+
+.header-login:hover{
+    color:#5f5f5c
+}
+
+.header-contacts{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #82827D;
+    position: absolute;
+    width: 63px;
+    height: 36px;
+    left: 1670px;
+    top: 40px;
+    }
+
+    .header-contacts:hover{
+        color:#5f5f5c;
+    }
+
+    .header-section .hero-header{
+        font-family: Roboto;
+        font-style: normal;
+        margin: 200px;
+        text-align: center;
+
+
+
+    }
+
+    .header-section .hero-header .header{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 140px;
+        letter-spacing: 0.11em;
+        color: rgb(142, 147, 148);
+
+    }
+
+    .header-button{
+        background: #FFED00;
+        border-radius: 20px;
+        border: none;
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        color: black;
+        font-weight: 200;
+    }
+
+    .header-button:hover{
+        background: #f7ed62;
+        width: 310px;
+        height: 55px;
+    }
+
+    .header-button:active{
+        background: #f8f193;
+        width: 290px;
+        height: 45px;
+    }
+
+    .sub-header {
+
+        margin-bottom: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.12em;
+    }
+
