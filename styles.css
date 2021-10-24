@@ -3,17 +3,26 @@
     padding: 0px;
 }
 
+body{
+    font-size: 10px;
+}
+
 
 
 .header-section{
-position: absolute;
-width: 1800px;
-height: 650px;
-left: 90px;
-top: 60px;
-background: rgba(118, 255, 222, 0.38);
-border-radius: 50px;
 
+position: absolute;
+width: 180rem;
+height: 65rem;
+left: 9rem;
+top: 6rem;
+background: rgb(133, 133, 133);
+background-image: url("./images/skydivingImageHeader1.png");
+background-repeat: no-repeat;
+background-position: center;
+box-sizing: border-box;
+border-radius: 5rem;
+background-size: 185rem 70rem;
 }
 
 .header-logo{
@@ -24,40 +33,41 @@ border-radius: 50px;
     top: 50px;
 }
 
-.header-login{
-font-family: Oswald;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-color: #82827D;
-position: absolute;
-width: 63px;
-height: 36px;
-left: 1600px;
-top: 40px;
+     /*--Header LInks Section--*/
 
-}
+    .header-links{
+        display: flex;
+        justify-content: flex-end;
+        margin: 25px 25px;
+        font-family: Roboto;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
 
-.header-login:hover{
-    color:#5f5f5c
-}
-
-.header-contacts{
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: #82827D;
-    position: absolute;
-    width: 63px;
-    height: 36px;
-    left: 1670px;
-    top: 40px;
     }
 
-    .header-contacts:hover{
-        color:#5f5f5c;
+    .header-links .header-login{
+        margin-right: 15px;
+        text-decoration: none;
+        color: #5b84f5;
+
     }
+
+    .header-links .header-login:hover{
+        color:rgb(0, 18, 179);
+    }
+
+    .header-links .header-contacts{
+        text-decoration: none;
+        color: #5b84f5;
+    }
+
+    .header-links .header-contacts:hover{
+        color:rgb(0, 18, 179);
+    }
+
+
+
 
     .header-section .hero-header{
         font-family: Roboto;
@@ -70,8 +80,6 @@ top: 40px;
     }
 
     .header-section .hero-header .header{
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 300;
         font-size: 140px;
         letter-spacing: 0.11em;
@@ -86,9 +94,6 @@ top: 40px;
         width: 300px;
         height: 50px;
         font-size: 30px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         color: black;
         font-weight: 200;
     }
@@ -108,8 +113,6 @@ top: 40px;
     .sub-header {
 
         margin-bottom: 20px;
-        font-family: Roboto;
-        font-style: normal;
         font-weight: normal;
         font-size: 36px;
         line-height: 42px;
