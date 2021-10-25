@@ -3,34 +3,56 @@
     padding: 0px;
 }
 
-body{
-    font-size: 10px;
+
+html, body{
+    font-size: 16px;
 }
+
 
 
 
 .header-section{
 
-position: absolute;
-width: 180rem;
-height: 65rem;
-left: 9rem;
-top: 6rem;
+position: relative;
+width: 90%;
+height: 25%;
+left: 5%;
+top: 5%;
 background: rgb(133, 133, 133);
-background-image: url("./images/skydivingImageHeader1.png");
-background-repeat: no-repeat;
-background-position: center;
-box-sizing: border-box;
-border-radius: 5rem;
-background-size: 185rem 70rem;
+padding-bottom: 2rem;
+
+border-radius: 20px;
+
+}
+
+@media screen and (max-width: 700px){
+    .header-links .header-login{
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .header-links .header-contacts{
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
 }
 
 .header-logo{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 50px;
-    top: 50px;
+    width: 5rem;
+    height: 5rem;
+
+    left: 1.5rem;
+    top: 1.5rem;
+}
+
+@media only screen and (max-width: 700px){
+    .header-logo{
+         left: 1rem;
+         top: 1rem;
+         width: 3rem;
+         height: 3rem;
+    }
 }
 
      /*--Header LInks Section--*/
@@ -38,16 +60,17 @@ background-size: 185rem 70rem;
     .header-links{
         display: flex;
         justify-content: flex-end;
-        margin: 25px 25px;
+        margin: 0px 3%;
         font-family: Roboto;
-        font-size: 20px;
+        font-size: 1.5vw;
         text-transform: uppercase;
         font-weight: bold;
 
     }
 
     .header-links .header-login{
-        margin-right: 15px;
+        margin-right: 1rem;
+        margin-top: 1rem;
         text-decoration: none;
         color: #5b84f5;
 
@@ -59,6 +82,7 @@ background-size: 185rem 70rem;
 
     .header-links .header-contacts{
         text-decoration: none;
+        margin-top: 1rem;
         color: #5b84f5;
     }
 
@@ -70,38 +94,41 @@ background-size: 185rem 70rem;
 
 
     .header-section .hero-header{
+
         font-family: Roboto;
         font-style: normal;
-        margin: 200px;
         text-align: center;
+
 
 
 
     }
 
     .header-section .hero-header .header{
+
         font-weight: 300;
-        font-size: 140px;
+        font-size: 8vw;
         letter-spacing: 0.11em;
         color: rgb(142, 147, 148);
+
 
     }
 
     .header-button{
         background: #FFED00;
-        border-radius: 20px;
+        border-radius: 1.25rem;
         border: none;
-        width: 300px;
-        height: 50px;
-        font-size: 30px;
+        width: 20%;
+        height: 10%;
+        font-size: 2vw;
         color: black;
         font-weight: 200;
     }
 
     .header-button:hover{
         background: #f7ed62;
-        width: 310px;
-        height: 55px;
+        width: 20.5%;
+        height: 10.5%;
     }
 
     .header-button:active{
@@ -112,10 +139,10 @@ background-size: 185rem 70rem;
 
     .sub-header {
 
-        margin-bottom: 20px;
+        margin-bottom: 1rem;
         font-weight: normal;
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 2vw;
+
         letter-spacing: 0.12em;
     }
 
