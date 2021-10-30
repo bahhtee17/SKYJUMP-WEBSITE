@@ -1,148 +1,66 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+ *{
+     padding: 0;
+     margin: 0;
+ }
 
 
-html, body{
+body{
     font-size: 16px;
+    margin: 0, auto;
+    box-sizing: border-box;
 }
 
-
-
-
-.header-section{
-
-position: relative;
-width: 90%;
-height: 25%;
-left: 5%;
-top: 5%;
-background: rgb(133, 133, 133);
-padding-bottom: 2rem;
-
-border-radius: 20px;
-
+.container{
+    text-align: center;
+    height: 350px;
+    background-image: linear-gradient( to right, #9fdad3ad, #3b7a73b6), url(./images/bg-header.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 20%
 }
 
-@media screen and (max-width: 700px){
-    .header-links .header-login{
-        font-size: 0.5rem;
-        margin-top: 0.5rem;
-    }
+ .hero-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-    .header-links .header-contacts{
-        font-size: 0.5rem;
-        margin-top: 0.5rem;
-    }
+h1{
+    color: #a3eee6;
+    font-size: 4.5rem;
+    letter-spacing: 0.25em;
+    font-weight: 200;
+    font-family: Roboto;
+    text-shadow: 2px 2px 8px #ffffff;
+}
+
+h3{
+    color: white;
+    font-family: Roboto;
+    letter-spacing: 0.15em;
 }
 
 .header-logo{
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-
-    left: 1.5rem;
-    top: 1.5rem;
+opacity: 0.7;
 }
 
-@media only screen and (max-width: 700px){
-    .header-logo{
-         left: 1rem;
-         top: 1rem;
-         width: 3rem;
-         height: 3rem;
-    }
+button{
+    width: 15%;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 15px;
+    border: none;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #EBBCAD;
+    color: white;
 }
 
-     /*--Header LInks Section--*/
-
-    .header-links{
-        display: flex;
-        justify-content: flex-end;
-        margin: 0px 3%;
-        font-family: Roboto;
-        font-size: 1.5vw;
-        text-transform: uppercase;
-        font-weight: bold;
-
-    }
-
-    .header-links .header-login{
-        margin-right: 1rem;
-        margin-top: 1rem;
-        text-decoration: none;
-        color: #5b84f5;
-
-    }
-
-    .header-links .header-login:hover{
-        color:rgb(0, 18, 179);
-    }
-
-    .header-links .header-contacts{
-        text-decoration: none;
-        margin-top: 1rem;
-        color: #5b84f5;
-    }
-
-    .header-links .header-contacts:hover{
-        color:rgb(0, 18, 179);
-    }
+a{
+    display: none;
+    text-align: right;
+}
 
 
-
-
-    .header-section .hero-header{
-
-        font-family: Roboto;
-        font-style: normal;
-        text-align: center;
-
-
-
-
-    }
-
-    .header-section .hero-header .header{
-
-        font-weight: 300;
-        font-size: 8vw;
-        letter-spacing: 0.11em;
-        color: rgb(142, 147, 148);
-
-
-    }
-
-    .header-button{
-        background: #FFED00;
-        border-radius: 1.25rem;
-        border: none;
-        width: 20%;
-        height: 10%;
-        font-size: 2vw;
-        color: black;
-        font-weight: 200;
-    }
-
-    .header-button:hover{
-        background: #f7ed62;
-        width: 20.5%;
-        height: 10.5%;
-    }
-
-    .header-button:active{
-        background: #f8f193;
-        width: 290px;
-        height: 45px;
-    }
-
-    .sub-header {
-
-        margin-bottom: 1rem;
-        font-weight: normal;
-        font-size: 2vw;
-
-        letter-spacing: 0.12em;
-    }
 
