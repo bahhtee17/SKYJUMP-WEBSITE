@@ -6,61 +6,163 @@
 
 body{
     font-size: 16px;
-    margin: 0, auto;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 .container{
-    text-align: center;
-    height: 350px;
+
+    width: 100%;
+    height: 100vh;
     background-image: linear-gradient( to right, #9fdad3ad, #3b7a73b6), url(./images/bg-header.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 20%
+    background-position-y:center;
+}
+
+
+
+
+nav ul {
+    height: 12%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: right;
+}
+
+.col{
+    display: inline-flex;
+    margin-top: 1vh;
+    margin-right: 1vh;
+    background-color: #FF4221;
+    text-transform: uppercase;
+    font-family: Roboto;
+    padding: 0.5%;
+}
+ .col:hover{
+    background-color: #fa6b52;
+ }
+
+.col a{
+    color: wheat;
+    font-size: 100%;
+}
+
+.col-1{
+    display: inline-flex;
+    margin-right: 10px;
+
+}
+-----------------------------
+
+header{
+    width: 100%;
+
+
 }
 
  .hero-header{
     display: flex;
     align-items: center;
     flex-direction: column;
+
+
 }
 
 h1{
-    color: #a3eee6;
-    font-size: 4.5rem;
+    color: white;
+    font-size: 15vh;
+    margin-top: 40vh;
     letter-spacing: 0.25em;
     font-weight: 200;
     font-family: Roboto;
-    text-shadow: 2px 2px 8px #ffffff;
+    animation-name: header-anim;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+
 }
 
 h3{
     color: white;
     font-family: Roboto;
     letter-spacing: 0.15em;
+    animation: sub-header-anim 2s ease-out;
 }
 
-.header-logo{
-opacity: 0.7;
-}
+
 
 button{
+
     width: 15%;
     font-weight: bold;
     font-family: Roboto;
     font-size: 15px;
     border: none;
-    margin-top: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
     padding: 5px;
-    border-radius: 10px;
-    background-color: #EBBCAD;
+    background-color: #F05000;
     color: white;
 }
 
-a{
-    display: none;
-    text-align: right;
+button:hover{
+    background-color: #f1793c;
 }
+
+@media only screen and (max-width: 650px) {
+    h1{
+        font-size: 10vh;
+    }
+
+    h3{
+        font-size: 3vh;
+    }
+
+    button{
+        width: 20%;
+    }
+}
+
+/* --animations-- */
+
+@keyframes header-anim{
+   0%{
+     opacity: 0;
+
+   }
+
+   70%{
+     opacity: 0.7;
+   }
+
+   100%{
+    opacity: 1;
+   }
+}
+
+@keyframes sub-header-anim{
+    0%{
+     opacity: 0;
+     transform: translateX(-100px);
+    }
+
+
+
+    100%{
+      opacity: 1;
+      transform: translate(0px);
+    }
+}
+
+
+
 
 
 
