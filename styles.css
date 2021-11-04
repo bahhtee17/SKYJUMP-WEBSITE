@@ -136,7 +136,7 @@ button:hover{
 .section-1{
     display: inline-grid;
     grid-template-columns: 50% 50%;
-
+    height: 100%;
 
 
 }
@@ -144,22 +144,32 @@ button:hover{
 
 .img-section img{
     width: 95%;
-
-
-
-
 }
 
 #img{
-    padding: 3% 3%;
+    padding: 5% 5%;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .section-header{
-   margin: 10px ;
+   padding: 3%;
+   letter-spacing: 0.1em;
+   font-weight: 200;
+   text-transform: uppercase;
+   font-size: 3vw;
+   color: #E09F63;
+   font-family: Roboto;
+}
 
+
+
+p{
+    font-family: Roboto;
+    line-height: 2.1vw;
+    font-size: 1vw;
+    letter-spacing: 2px;
 }
 
 
@@ -167,9 +177,35 @@ button:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+
     height: 100%;
-    padding: 3% 3%;
+    padding: 3% 3% 25% 3%;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .section-1{
+        display: block;
+
+
+    }
+
+    #img{
+        width: 100%;
+        padding: 0;
+        margin-top: 5%;
+    }
+
+    .text{
+        font-family: Roboto;
+        line-height: 4.4vw;
+        font-size: 3vw;
+        letter-spacing: 3.1px;
+    }
+
+    .section-header{
+      font-size: 6vw;
+    }
 
 }
 
